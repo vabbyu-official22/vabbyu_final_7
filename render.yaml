@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: vabbyu
+    env: python
+    buildCommand: ""
+    startCommand: ./start.sh
+    plan: free
+    envVars:
+      - key: FLASK_ENV
+        value: production
